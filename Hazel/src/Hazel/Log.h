@@ -4,6 +4,7 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Hazel {
 
@@ -23,7 +24,6 @@ namespace Hazel {
 
 
 }
-
 
 //Core log macros
 #define HZ_CORE_TRACE(...) ::Hazel::Log::GetCoreLogger()->trace(__VA_ARGS__) //VA_ARGS forwards the variable arguments in our macro to our actual function
